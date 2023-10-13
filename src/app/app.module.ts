@@ -12,6 +12,7 @@ import { HorariosComponent } from './horarios/horarios.component';
 import { LegajoComponent } from './legajo/legajo.component';
 import * as $ from 'jquery';
 import * as jQuery from 'jquery';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import * as jQuery from 'jquery';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
