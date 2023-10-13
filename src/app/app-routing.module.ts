@@ -6,6 +6,7 @@ import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios
 import { RegistroFedatariosComponent } from './registro-fedatarios/registro-fedatarios.component';
 import { SubirArchivosComponent } from './subir-archivos/subir-archivos.component';
 import { HorariosComponent } from './horarios/horarios.component';
+import { LegajoComponent } from './legajo/legajo.component';
 
 const routes: Routes = [
   { path: 'login', component:LoginComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
       { path: 'usuarios', component:RegistroUsuariosComponent },
       { path: 'fedatarios', component:RegistroFedatariosComponent },
       { path: 'archivos', component:SubirArchivosComponent},
-      { path: 'horarios', component:HorariosComponent }
+      { path: 'horarios', component:HorariosComponent },
+      { path: 'legajo', component:LegajoComponent }
     ]
   },
   { path: '', pathMatch:'full', redirectTo: '/login' }

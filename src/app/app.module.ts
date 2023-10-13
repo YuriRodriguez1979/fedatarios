@@ -9,6 +9,9 @@ import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios
 import { RegistroFedatariosComponent } from './registro-fedatarios/registro-fedatarios.component';
 import { SubirArchivosComponent } from './subir-archivos/subir-archivos.component';
 import { HorariosComponent } from './horarios/horarios.component';
+import { LegajoComponent } from './legajo/legajo.component';
+import * as $ from 'jquery';
+import * as jQuery from 'jquery';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { HorariosComponent } from './horarios/horarios.component';
     RegistroUsuariosComponent,
     RegistroFedatariosComponent,
     SubirArchivosComponent,
-    HorariosComponent
+    HorariosComponent,
+    LegajoComponent
   ],
   imports: [
     BrowserModule,
