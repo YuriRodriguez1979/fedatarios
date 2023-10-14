@@ -13,6 +13,8 @@ import { LegajoComponent } from './legajo/legajo.component';
 import * as $ from 'jquery';
 import * as jQuery from 'jquery';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { FormsModule } from '@angular/forms'; // Agrega esta importación
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { FullCalendarModule } from '@fullcalendar/angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FullCalendarModule
+    FullCalendarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

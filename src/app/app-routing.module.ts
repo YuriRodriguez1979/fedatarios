@@ -20,6 +20,7 @@ const routes: Routes = [
       { path: 'legajo', component:LegajoComponent }
     ]
   },
+  { path: 'registro_usuarios', component:RegistroUsuariosComponent },
   { path: '', pathMatch:'full', redirectTo: '/login' }
 ];
 
