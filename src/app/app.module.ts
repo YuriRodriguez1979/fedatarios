@@ -12,8 +12,11 @@ import { HorariosComponent } from './horarios/horarios.component';
 import { LegajoComponent } from './legajo/legajo.component';
 import * as $ from 'jquery';
 import * as jQuery from 'jquery';
+import * as bootstrap from 'bootstrap';
 import { FullCalendarModule } from '@fullcalendar/angular';
-import { FormsModule } from '@angular/forms'; // Agrega esta importación
+import { FormsModule } from '@angular/forms';
+import { FirmarComponent } from './firmar/firmar.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -25,13 +28,15 @@ import { FormsModule } from '@angular/forms'; // Agrega esta importación
     RegistroFedatariosComponent,
     SubirArchivosComponent,
     HorariosComponent,
-    LegajoComponent
+    LegajoComponent,
+    FirmarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FullCalendarModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

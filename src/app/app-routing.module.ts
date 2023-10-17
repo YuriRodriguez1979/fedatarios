@@ -7,6 +7,7 @@ import { RegistroFedatariosComponent } from './registro-fedatarios/registro-feda
 import { SubirArchivosComponent } from './subir-archivos/subir-archivos.component';
 import { HorariosComponent } from './horarios/horarios.component';
 import { LegajoComponent } from './legajo/legajo.component';
+import { FirmarComponent } from './firmar/firmar.component';
 
 const routes: Routes = [
   { path: 'login', component:LoginComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
       { path: 'fedatarios', component:RegistroFedatariosComponent },
       { path: 'archivos', component:SubirArchivosComponent},
       { path: 'horarios', component:HorariosComponent },
-      { path: 'legajo', component:LegajoComponent }
+      { path: 'legajo', component:LegajoComponent },
+      { path: 'firmar', component:FirmarComponent}
     ]
   },
   { path: 'registro_usuarios', component:RegistroUsuariosComponent },
