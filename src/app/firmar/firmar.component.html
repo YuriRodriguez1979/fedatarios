@@ -40,6 +40,11 @@
               </button>
             </td>
             <td>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#observaciones" data-whatever="@mdo">
+                <i class="fa-solid fa-bomb"></i>
+              </button>
+            </td>
+            <td>
               <button class="btn btn-success"><i class="fa-solid fa-signature"></i>Firmar</button>
             </td>
           </tr>
@@ -58,6 +63,10 @@
                 <i class="fa-solid fa-binoculars"></i>
               </button>
             </td>
+            <td>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#observaciones" data-whatever="@mdo" >
+              <i class="fa-solid fa-bomb"></i>
+            </button>
             <td>
               <button class="btn btn-success"><i class="fa-solid fa-signature"></i>Firmar</button>
             </td>
@@ -84,3 +93,35 @@
     </div>
   </div>
 </div>
+
+<!-- Model para las observaciones -->
+<div class="modal fade" id="observaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registro de Documentos Observados</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccione el tipo de Observacion</option>
+            <option value="1">Imagen no corresponde</option>
+            <option value="2">Documento escaneado no es original</option>
+            <option value="3">El documento escaneado presenta sombras</option>
+          </select>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Registrar Observaciones</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
